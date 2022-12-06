@@ -1,8 +1,8 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from Nibbi.Modules.helpers.filters import command, other_filters
-from Nibbi.Modules.helpers.decorators import sudo_users_only, errors
+from Natasha.Modules.helpers.filters import command, other_filters
+from Natasha.Modules.helpers.decorators import sudo_users_only, errors
 
 downloads = os.path.realpath("downloads")
 raw_files = os.path.realpath("raw_files")
