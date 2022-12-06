@@ -5,12 +5,12 @@ import aiohttp
 import yt_dlp
 from pyrogram.types import Message
 from pyrogram import Client, filters
-from Nibbi.Modules.helpers.filters import command, other_filters
+from Natasha.Modules.helpers.filters import command, other_filters
 from pyrogram.errors import UserAlreadyParticipant
-from Nibbi.Modules.helpers.decorators import authorized_users_only
-from Nibbi.Modules.cache.clientbot import client as user
-from Nibbi.config import BOT_USERNAME, STRING_SESSION as SESSION_NAME
-from Nibbi.Modules.helpers.get_file_id import get_file_id
+from Natasha.Modules.helpers.decorators import authorized_users_only
+from Natasha.Modules.cache.clientbot import client as user
+from Natasha.config import BOT_USERNAME, STRING_SESSION as SESSION_NAME
+from Natasha.Modules.helpers.get_file_id import get_file_id
 from youtube_search import YoutubeSearch
 
 # ×=======================> ᴜsᴇʀʙᴏᴛ ᴊᴏɪɴ ᴄᴏᴍᴍᴀɴᴅ <==================================× #
@@ -125,7 +125,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**➠ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ​ » [ᴍᴇᴀᴡ ᴍᴜsɪᴄ](t.me/{BOT_USERNAME}) 🍄\n➠ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​ » {chutiya}\n➠ sᴇᴀʀᴄʜᴇᴅ ғᴏʀ » {query}**"
+        rep = f"**➠ ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ​ » [ɴᴀᴛᴀsʜᴀ ᴍᴜsɪᴄ](t.me/{BOT_USERNAME}) 🍄\n➠ ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​ » {chutiya}\n➠ sᴇᴀʀᴄʜᴇᴅ ғᴏʀ » {query}**"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -133,7 +133,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit("**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [ᴛʜᴇ sᴜᴘᴘᴏʀᴛ ʙᴏᴛs](t.me/TheSupportBots)**")
+        m.edit("**» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ​ » [ʜɪɴᴅɪ ᴇɴɢʟɪsʜ ᴄʜᴀᴛ](https://t.me/Hindi_English_Chatt)**")
         print(e)
 
     try:
