@@ -11,7 +11,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-NIBBI_IMG = (
+START_IMG = (
 "https://te.legra.ph/file/24e09283605dd7e6160a1.jpg",
 "https://te.legra.ph/file/2ea6a63d1738eec406e23.jpg",
 "https://te.legra.ph/file/c6dc0b91fd56d5c99871b.jpg",
@@ -32,11 +32,12 @@ NIBBI_IMG = (
 
 
 START_TEXT = """
-ʜɪ ɢᴜʏꜱ, ɪ ᴀᴍ ᴠᴇʀʏ ʜɪɢʜʟʏ ᴀ.ɪ ᴀᴅᴠᴀɴᴄᴇᴅ ɴᴇxᴛ ɢᴇɴᴇʀᴀᴛɪᴏɴ ᴠᴄ ʙᴏᴛ. ɪ' ᴍ ᴠᴇʀʏ ғᴀꜱᴛ ᴀɴᴅ ᴍᴏʀᴇ ᴇꜰꜰɪᴄɪᴇɴᴛ ɪ'ᴍ ᴘʀᴏᴠɪᴅᴇ ᴀᴡᴇꜱᴏᴍᴇ ꜱᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ !
-
-───────────────────
-××          [ɴɪʙʙɪ ✘ ʀᴏʙᴏᴛ](https://t.me/NibbiRobot)           ××
-───────────────────
+ʜɪ ɢᴜʏꜱ,ɪ ᴀᴍ ɴᴀᴛᴀsʜᴀ 🇮🇳
+⦿ ɪ'ᴍ ᴀ ꜱɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜꜱɪᴄ ʙᴏᴛ.
+⦿ ɪ'ᴍ ᴠᴇʀʏ ғᴀꜱᴛ ᴀɴᴅ ᴍᴏʀᴇ ᴇꜰꜰɪᴄɪᴇɴᴛ. 
+⦿ ɪ'ᴍ ᴘʀᴏᴠɪᴅᴇ ᴀᴡᴇꜱᴏᴍᴇ ꜱᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ.
+⦿ɪ'ᴍ ғᴜʟʟʏ sᴛᴀʙʟᴇ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴀɴᴅ ᴢᴇʀᴏ ʟᴀɢs ᴀɴᴅ ᴅᴏᴡɴᴛɪᴍᴇ ɪssᴜᴇs.
+⦿ ɪ ʜᴀᴠᴇ ᴀʟᴍᴏꜱᴛ ᴀʟʟ ꜰᴇᴀᴛᴜʀᴇꜱ ᴡʜɪᴄʜ ɴᴇᴇᴅꜱ ᴀ ᴍᴜꜱɪᴄ ʙᴏᴛ
 
 ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ꜰᴇᴀᴛᴜʀᴇꜱ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴄᴍᴅ ʙᴜᴛᴛᴏɴ ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ᴍᴇ.
 """
@@ -72,7 +73,7 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        random.choice(NIBBI_IMG),
+        random.choice(START_IMG),
         caption=(START_TEXT),
     reply_markup=InlineKeyboardMarkup(
     [
@@ -93,7 +94,7 @@ async def start_(client: Client, message: Message):
 @Client.on_message(commandpro(["/start", "/alive"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        random.choice(NIBBI_IMG),
+        random.choice(START_IMG),
         caption=(START_TEXT),
         reply_markup=InlineKeyboardMarkup(
     [
