@@ -1,10 +1,10 @@
 from typing import List
 from pyrogram.types import Chat, User
-import Nibbi.Modules.cache.admins
+import Natasha.Modules.cache.admins
 
 
 async def get_administrators(chat: Chat) -> List[User]:
-    get = Nibbi.Modules.cache.admins.get(chat.id)
+    get = Natasha.Modules.cache.admins.get(chat.id)
 
     if get:
         return get
@@ -16,5 +16,5 @@ async def get_administrators(chat: Chat) -> List[User]:
             if administrator.can_manage_voice_chats:
                 to_set.append(administrator.user.id)
 
-        Nibbi.Modules.cache.admins.set(chat.id, to_set)
+        Natasha.Modules.cache.admins.set(chat.id, to_set)
         return await get_administrators(chat)
