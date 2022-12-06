@@ -2,9 +2,9 @@ import asyncio
 import random
 from time import time
 from datetime import datetime
-from Nibbi.config import BOT_USERNAME
-from Nibbi.Modules.helpers.filters import command
-from Nibbi.Modules.helpers.command import commandpro
+from Natasha.config import BOT_USERNAME
+from Natasha.Modules.helpers.filters import command
+from Natasha.Modules.helpers.command import commandpro
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
