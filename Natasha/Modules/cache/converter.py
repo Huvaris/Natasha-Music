@@ -1,7 +1,7 @@
 from os import path
 import asyncio
 
-from Nibbi.Modules.helpers.errors import FFmpegReturnCodeError
+from Natasha.Modules.helpers.errors import FFmpegReturnCodeError
 
 
 async def convert(file_path: str) -> str:
