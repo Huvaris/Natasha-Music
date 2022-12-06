@@ -12,20 +12,20 @@ from typing import Callable
 from pyrogram import Client, filters
 from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.errors import UserAlreadyParticipant
-from Nibbi.Modules.cache.admins import set
-from Nibbi.Modules.cache import clientbot, queues
-from Nibbi.Modules.cache.clientbot import client as USER
-from Nibbi.Modules.helpers.admins import get_administrators
+from Natasha.Modules.cache.admins import set
+from Natasha.Modules.cache import clientbot, queues
+from Natasha.Modules.cache.clientbot import client as USER
+from Natasha.Modules.helpers.admins import get_administrators
 from youtube_search import YoutubeSearch
-from Nibbi.Modules.cache import converter
-from Nibbi.Modules.cache import youtube
-from Nibbi.config import DURATION_LIMIT, que, SUDO_USERS
-from Nibbi.Modules.cache.admins import admins as a
-from Nibbi.Modules.helpers.filters import command, other_filters
-from Nibbi.Modules.helpers.command import commandpro
-from Nibbi.Modules.helpers.decorators import errors, authorized_users_only
-from Nibbi.Modules.helpers.errors import DurationLimitError
-from Nibbi.Modules.helpers.gets import get_url, get_file_name
+from Natasha.Modules.cache import converter
+from Natasha.Modules.cache import youtube
+from Natasha.config import DURATION_LIMIT, que, SUDO_USERS
+from Natasha.Modules.cache.admins import admins as a
+from Natasha.Modules.helpers.filters import command, other_filters
+from Natasha.Modules.helpers.command import commandpro
+from Natasha.Modules.helpers.decorators import errors, authorized_users_only
+from Natasha.Modules.helpers.errors import DurationLimitError
+from Natasha.Modules.helpers.gets import get_url, get_file_name
 from PIL import Image, ImageFont, ImageDraw, ImageFilter
 from PIL import ImageGrab
 from pytgcalls import StreamType
@@ -96,7 +96,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
     image = Image.open(f"./background.png")
     black = Image.open("resource/black.jpg")
-    img = Image.open("resource/meaw.png")
+    img = Image.open("resource/Natasha.png")
     image5 = changeImageSize(1280, 720, img)
     image1 = changeImageSize(1280, 720, image)
     image1 = image1.filter(ImageFilter.BoxBlur(10))
@@ -140,7 +140,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     font4 = ImageFont.truetype(r'resource/Mukta-ExtraBold.ttf', 35)
 
     image4 = ImageDraw.Draw(image2)
-    image4.text((10, 10), "NIBBI MUSIC", fill="white", font = font1, align ="left") 
+    image4.text((10, 10), "NATASHA MUSIC", fill="white", font = font1, align ="left") 
     image4.text((670, 150), "NOW PLAYING", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
 
     # title
