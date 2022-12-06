@@ -8,4 +8,4 @@ RUN npm i -g npm
 COPY . /sumit/
 WORKDIR /sumit/
 RUN pip3 install -U -r requirements.txt
-CMD python3 -m Nibbi
+CMD python3 -m Natasha
