@@ -2,8 +2,8 @@ from os import path
 
 from yt_dlp import YoutubeDL
 
-from Nibbi.config import DURATION_LIMIT
-from Nibbi.Modules.helpers.errors import DurationLimitError
+from Natasha.config import DURATION_LIMIT
+from Natasha.Modules.helpers.errors import DurationLimitError
 
 ydl_opts = {
     "format": "bestaudio/best",
