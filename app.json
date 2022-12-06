@@ -1,9 +1,9 @@
 {
-    "name": "ɴɪʙʙɪ ✘ ᴍᴜsɪᴄ",
+    "name": "ɴᴀᴛᴀsʜᴀ ᴍᴜsɪᴄ",
     "logo": "https://te.legra.ph/file/086426b04c04a3c16f558.jpg",
     "description": "ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴘʀᴇᴍɪᴜᴍ ᴍᴜsɪᴄ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ sᴜᴍɪᴛ ʏᴀᴅᴀᴠ.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/Sumit0045/NibbiMusic",
+    "repository": "https://github.com/Sumit0045/Natasha-Music",
     "stack": "container",
     "env": {
         "BOT_USERNAME": {
@@ -19,7 +19,7 @@
             "required": true
         },
         "STRING_SESSION": {
-            "description": "𝙿𝚢𝚛𝚘𝚐𝚛𝚊𝚖 𝚂𝚝𝚛𝚒𝚗𝚐 𝚂𝚎𝚜𝚜𝚒𝚘𝚗: 𝚄𝚜𝚎 𝚃𝚑𝚎𝚜𝚎 𝙱𝚘𝚝 @Hana_Session_Bot",
+            "description": "𝙿𝚢𝚛𝚘𝚐𝚛𝚊𝚖 𝚂𝚝𝚛𝚒𝚗𝚐 𝚂𝚎𝚜𝚜𝚒𝚘𝚗:",
             "required": true
         }
     },
