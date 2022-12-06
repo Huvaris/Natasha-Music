@@ -3,8 +3,8 @@ from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
-from Nibbi import config
-from Nibbi.Modules.cache import queues
+from Natasha import config
+from Natasha.Modules.cache import queues
 
 client = Client(config.STRING_SESSION, config.API_ID, config.API_HASH)
 pytgcalls = PyTgCalls(client)
