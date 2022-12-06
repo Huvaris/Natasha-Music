@@ -9,10 +9,10 @@ from time import time
 from pyrogram import filters
 from inspect import getfullargspec
 from sys import version as pyver
-from Nibbi.config import BOT_USERNAME
+from Natasha.config import BOT_USERNAME
 from pyrogram import Client
-from Nibbi.Modules.helpers.decorators import sudo_users_only
-from Nibbi.Modules.helpers.filters import command
+from Natasha.Modules.helpers.decorators import sudo_users_only
+from Natasha.Modules.helpers.filters import command
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 
