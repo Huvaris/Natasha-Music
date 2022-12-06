@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
-from Nibbi.config import BOT_USERNAME
+from Natasha.config import BOT_USERNAME
 from pyrogram.errors import MessageNotModified
 
 
