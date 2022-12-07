@@ -82,7 +82,7 @@ async def start_(client: Client, message: Message):
         ],
         
         [
-            InlineKeyboardButton("🧰 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_cmd"),
+            InlineKeyboardButton("🧰 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Hindi_English_Chatt"),
             InlineKeyboardButton("🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/Simple_Munda"),
         ]
    
@@ -103,7 +103,7 @@ async def start(client: Client, message: Message):
         ],
         
         [
-            InlineKeyboardButton("🧰 ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_cmd"),
+            InlineKeyboardButton("🧰 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Hindi_English_Chatt"),
             InlineKeyboardButton("🎓 ᴍᴀɪɴᴛᴀɪɴᴇʀ", url=f"https://t.me/Simple_Munda")
         ]
    
