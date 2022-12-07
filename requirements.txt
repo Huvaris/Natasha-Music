@@ -9,7 +9,7 @@ yt-dlp==2022.10.04
 motor
 pillow
 psutil
-pyrogram==2.0.56
+pyrogram==1.4.16
 py-tgcalls==0.8.1
 python-dotenv
 requests
